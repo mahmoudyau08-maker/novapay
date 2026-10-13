@@ -1,0 +1,22 @@
+name: novapay
+description: NovaPay - a fictional, permanently watermarked wallet demo for entertainment and education. Not a real payment app.
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  share_plus: ^13.3.1
+  path_provider: ^2.1.6
+  cross_file: ^0.4.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true

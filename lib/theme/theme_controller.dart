@@ -1,0 +1,15 @@
+import 'package:flutter/material.dart';
+
+/// Holds the current [ThemeMode]; starts by following the system setting.
+class ThemeController extends ChangeNotifier {
+  ThemeMode _mode = ThemeMode.system;
+
+  ThemeMode get mode => _mode;
+
+  void toggle(Brightness current) {
+    _mode = current == Brightness.dark ? ThemeMode.light : ThemeMode.dark;
+    notifyListeners();
+  }
+}
+
+final ThemeController themeController = ThemeController();
